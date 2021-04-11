@@ -1,0 +1,1409 @@
+    /* Login */
+    html input{
+        outline: none;
+    }
+    .headerLogin{
+        width: 100%;
+        height: 100px;
+        background-color: #4ba89c;
+    }
+    .bodyLogin{
+        margin: 100px 350px;
+        height: 350px;
+        width: 750px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .body__loginForm input{
+        width: 260px;
+        height: 55px;
+        margin: 0px 5px 10px 5px;
+        font-size: 20px;
+    }
+    .bodyLogin a{    
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 6px;
+    }
+    .bodyLogin a:hover{
+        text-decoration: underline;
+    }
+    #login{
+        width: 150px;
+        height: 61px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #168677;
+    }
+    #login:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .body__title{
+        color: white;
+        font-size: 26px;
+        padding: 10px 0px 40px 5px;
+    }
+    .footerLogin{
+        width: 100%;
+        height: 150px;
+        background-color: #4ba89c;
+    }
+    .welcome{
+        padding-top: 20px;
+        font-size: 45px;
+        margin-left: 800px;
+        color: white;
+        display: flex;
+    }
+    .welcome button{
+        margin-left: 10px;
+        background-color:  #4ba89c;
+        border: 1px solid #4ba89c;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    .welcome button:hover{
+        color: #efd4d4;
+    }
+    .welcome ul{
+        display: flex;
+        list-style: none;
+        position: relative;
+        top: -20px;
+    }
+    .welcome__first{
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+    /* Create */
+    .bodyCreate{
+        color: white;
+        margin: 100px 550px;
+        height: 230px;
+        width: 350px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .bodyCreate input{
+        margin-left: 30px;
+        width: 268px;
+    }
+    .createPassword input{
+        margin-left: 7px;
+    }
+    .bodyCreate div{
+        margin: 10px 0px;
+    }
+    .createButton input{
+        width: 150px;
+        margin-left: 194px;
+        border-radius: 6px;    
+    }
+    .createButton input:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .backCreate a{
+        color:  #168677;
+        margin-left: 550px;
+        display: flex;
+        position: relative;
+        top: -90px;
+        text-decoration: none;
+    }
+    .backCreate a:hover{
+        text-decoration: underline;
+    }
+    .questionContent input{
+        width: 900px;
+        height: 100px;
+        margin: 5px 16px;
+    }
+    .createInput input{
+        margin: 5px;
+    }
+    .CreateQuestionButton td input{
+        border-radius: 4px;
+        border: 1px solid #168677;
+        cursor: pointer;
+    }
+    .CreateQuestionButton input:hover{
+    background-color: rgb(189, 173, 173);
+    }
+    /* Search */
+    .searchLogin{
+        width: 100%;
+        height: 50px;
+        background-color: #168677;
+    }
+    .searchLogin input{
+        margin: 5px 0px 5px 654px ;
+        height: 30px;
+        width: 160px;       
+        background-color: #097163;
+        padding-left: 10px;
+        padding-top: 7px;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+    }
+    .statusBox{
+        height: 40px;
+        min-width: 50px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .subjectBox{
+        height: 40px;
+        min-width: 200px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .searchLogin input::placeholder{
+        color: white;
+        font-size: 20px;
+    }
+    .searchLogin button{
+        padding-bottom: 3px;
+        margin-left: -8px;
+        height: 40px;
+        width: 50px; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .bodySearch{
+        min-height: 500px;
+    }
+    .bodySearch table{
+        min-width: 1100px;
+        max-width: 1100px;
+        margin-left: 225px;
+        margin: 40px 190px;
+        border: 3px solid #168677;
+        background-color: #168677;
+        color: white;
+        border-collapse: collapse;
+    }
+    .bodySearch td{
+        border: 3px solid black;
+    }
+    .bodySearch th{
+        border: 3px solid black;
+    }
+    .searchLogin a{
+        text-decoration: none; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        margin-left: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        top: 1px;
+    }
+    .deleteLink{
+        text-align: center;
+        width: 60px;
+        height: 22px;
+        background-color: #f10909;
+        position: relative;
+        outline: none;
+        border: 1px solid #097163;
+        border-radius: 3px;
+    }
+    .deleteLink a{
+        text-decoration: none;
+        color: white;
+    }
+    .QuestionCon{
+        width: 160px;
+        max-width: 160px;
+        
+    }
+    .updateTH{
+        width: 80px;
+    }
+    .deleteTH{
+        width: 80px;
+    }
+    /* subjectQuiz */
+    .subjectQuiz{
+        width: 600px;
+        margin: 10px 150px;
+        color: white;
+    }
+    .subject{
+        padding-top: 10px;
+        min-height: 300px;
+        min-width: 900px;
+        max-width: 900px;
+        margin: 100px 275px;
+        background-color: #4ba89c;
+    }
+    .subject button{
+        margin-left: 150px;
+        border-radius: 6px;
+        border: 1px solid #4ba89c;
+        outline: none;
+        cursor: pointer;
+    }
+    /* Take Quiz */
+    .bodyQuiz{
+        margin: 100px 225px;
+    }
+    .bodyQuiz table{
+        max-width: 1000px;
+        min-width: 1000px;
+    }
+    .stt{
+        vertical-align: top;
+        width: 100px;
+        height: 120px;
+        border-radius: 6px;
+        color: #168677;
+    }
+    .stt div{
+        width: 85px;
+        height: 75px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background-color: #F2F3F5;
+    }
+    .question{
+        background-color: #e3eefd;
+        border-radius: 6px;
+        border: 1px solid #aecef9;
+    }
+    .bodyQuiz button{
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        position: relative;
+        left: 936px;
+        top: 5px;
+        width: 60px;
+        height: 20px;
+    }
+
+    /* Login */
+    html input{
+        outline: none;
+    }
+    .headerLogin{
+        width: 100%;
+        height: 100px;
+        background-color: #4ba89c;
+    }
+    .bodyLogin{
+        margin: 100px 350px;
+        height: 250px;
+        width: 750px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .body__loginForm input{
+        width: 260px;
+        height: 55px;
+        margin: 0px 5px 30px 5px;
+        font-size: 20px;
+    }
+    .bodyLogin a{    
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 6px;
+    }
+    .bodyLogin a:hover{
+        text-decoration: underline;
+    }
+    #login{
+        width: 150px;
+        height: 61px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #168677;
+    }
+    #login:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .body__title{
+        color: white;
+        font-size: 26px;
+        padding: 10px 0px 40px 5px;
+    }
+    .footerLogin{
+        width: 100%;
+        height: 150px;
+        background-color: #4ba89c;
+    }
+    .welcome{
+        padding-top: 20px;
+        font-size: 45px;
+        margin-left: 800px;
+        color: white;
+        display: flex;
+    }
+    .welcome button{
+        margin-left: 10px;
+        background-color:  #4ba89c;
+        border: 1px solid #4ba89c;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    .welcome ul{
+        display: flex;
+        list-style: none;
+        position: relative;
+        top: -20px;
+    }
+    .welcome__first{
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+    /* Create */
+    .bodyCreate{
+        color: white;
+        margin: 100px 550px;
+        height: 230px;
+        width: 350px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .bodyCreate input{
+        margin-left: 30px;
+        width: 268px;
+    }
+    .createPassword input{
+        margin-left: 7px;
+    }
+    .bodyCreate div{
+        margin: 10px 0px;
+    }
+    .createButton input{
+        width: 150px;
+        margin-left: 194px;
+        border-radius: 6px;    
+    }
+    .createButton input:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .backCreate a{
+        color:  #168677;
+        margin-left: 550px;
+        display: flex;
+        position: relative;
+        top: -90px;
+        text-decoration: none;
+    }
+    .backCreate a:hover{
+        text-decoration: underline;
+    }
+    /* Search */
+    .searchLogin{
+        width: 100%;
+        height: 50px;
+        background-color: #168677;
+    }
+    .searchLogin input{
+        margin: 5px 0px 5px 654px ;
+        height: 30px;
+        width: 160px;       
+        background-color: #097163;
+        padding-left: 10px;
+        padding-top: 7px;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+    }
+    .statusBox{
+        height: 40px;
+        min-width: 50px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .subjectBox{
+        height: 40px;
+        min-width: 200px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .searchLogin input::placeholder{
+        color: white;
+        font-size: 20px;
+    }
+    .searchLogin button{
+        padding-bottom: 3px;
+        margin-left: -8px;
+        height: 40px;
+        width: 50px; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .bodySearch{
+        min-height: 500px;
+    }
+    .bodySearch table{
+        min-width: 1000px;
+        max-width: 1000px;
+        margin-left: 225px;
+        margin: 40px 225px;
+        border: 3px solid #168677;
+        background-color: #168677;
+        color: white;
+        border-collapse: collapse;
+    }
+    .bodySearch td{
+        border: 3px solid black;
+    }
+    .bodySearch th{
+        border: 3px solid black;
+    }
+    .searchLogin a{
+        text-decoration: none; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        margin-left: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        top: 1px;
+    }
+    .deleteLink{
+        text-align: center;
+        width: 60px;
+        height: 22px;
+        background-color: #f10909;
+        position: relative;
+        left: 10px;
+        outline: none;
+        border: 1px solid #097163;
+        border-radius: 3px;
+    }
+    .deleteLink a{
+        text-decoration: none;
+        color: white;
+    }
+    /* subjectQuiz */
+    .subjectQuiz{
+        width: 600px;
+        margin: 10px 150px;
+        color: white;
+    }
+    .subject{
+        padding-top: 10px;
+        min-height: 300px;
+        min-width: 900px;
+        max-width: 900px;
+        margin: 100px 275px;
+        background-color: #4ba89c;
+    }
+    .subject button{
+        margin-left: 150px;
+        border-radius: 6px;
+        border: 1px solid #4ba89c;
+        outline: none;
+        cursor: pointer;
+    }
+    /* Take Quiz */
+    .bodyQuiz{
+        margin: 100px 225px;
+    }
+    .bodyQuiz table{
+        max-width: 1000px;
+        min-width: 1000px;
+    }
+    .stt{
+        vertical-align: top;
+        width: 100px;
+        height: 120px;
+        border-radius: 6px;
+        color: #168677;
+    }
+    .stt div{
+        width: 85px;
+        height: 75px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background-color: #F2F3F5;
+    }
+    .question{
+        background-color: #e3eefd;
+        border-radius: 6px;
+        border: 1px solid #aecef9;
+    }
+    .bodyQuiz button{
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        position: relative;
+        left: 936px;
+        top: 5px;
+        width: 60px;
+        height: 20px;
+    }
+    /* Result */
+    .bodyResult{
+        margin: 100px 125px;
+    }
+    .bodyResult h1{
+        margin-top: 0px;
+        color: #168677;
+        position:relative;
+        top: -50px;
+    }
+    .bodyResult table{
+        width: 1200px;
+    }
+    .backToCourse{
+        margin: 50px 600px 100px;
+        border: 1px solid black;
+        width: 190px;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #cdcdcd;
+        cursor: pointer;
+    }
+    .backToCourse:hover{
+        background-color: #a5a5a5;
+    }
+    .backToCourse a{
+        text-decoration: none;
+        color: #605e5e;
+
+    }
+
+
+    /* Login */
+    html input{
+        outline: none;
+    }
+    .headerLogin{
+        width: 100%;
+        height: 100px;
+        background-color: #4ba89c;
+    }
+    .bodyLogin{
+        margin: 100px 350px;
+        height: 250px;
+        width: 750px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .body__loginForm input{
+        width: 260px;
+        height: 55px;
+        margin: 0px 5px 30px 5px;
+        font-size: 20px;
+    }
+    .bodyLogin a{    
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 6px;
+    }
+    .bodyLogin a:hover{
+        text-decoration: underline;
+    }
+    #login{
+        width: 150px;
+        height: 61px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #168677;
+    }
+    #login:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .body__title{
+        color: white;
+        font-size: 26px;
+        padding: 10px 0px 40px 5px;
+    }
+    .footerLogin{
+        width: 100%;
+        height: 150px;
+        background-color: #4ba89c;
+    }
+    .welcome{
+        padding-top: 20px;
+        font-size: 45px;
+        margin-left: 800px;
+        color: white;
+        display: flex;
+    }
+    .welcome button{
+        margin-left: 10px;
+        background-color:  #4ba89c;
+        border: 1px solid #4ba89c;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    .welcome ul{
+        display: flex;
+        list-style: none;
+        position: relative;
+        top: -20px;
+    }
+    .welcome__first{
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+    /* Create */
+    .bodyCreate{
+        color: white;
+        margin: 100px 550px;
+        height: 230px;
+        width: 350px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .bodyCreate input{
+        margin-left: 30px;
+        width: 268px;
+    }
+    .createPassword input{
+        margin-left: 7px;
+    }
+    .bodyCreate div{
+        margin: 10px 0px;
+    }
+    .createButton input{
+        width: 150px;
+        margin-left: 194px;
+        border-radius: 6px;    
+    }
+    .createButton input:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .backCreate a{
+        color:  #168677;
+        margin-left: 550px;
+        display: flex;
+        position: relative;
+        top: -90px;
+        text-decoration: none;
+    }
+    .backCreate a:hover{
+        text-decoration: underline;
+    }
+    /* Search */
+    .searchLogin{
+        width: 100%;
+        height: 50px;
+        background-color: #168677;
+    }
+    .searchLogin input{
+        margin: 5px 0px 5px 654px ;
+        height: 30px;
+        width: 160px;       
+        background-color: #097163;
+        padding-left: 10px;
+        padding-top: 7px;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+    }
+    .statusBox{
+        height: 40px;
+        min-width: 50px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .subjectBox{
+        height: 40px;
+        min-width: 200px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .searchLogin input::placeholder{
+        color: white;
+        font-size: 20px;
+    }
+    .searchLogin button{
+        padding-bottom: 3px;
+        margin-left: -8px;
+        height: 40px;
+        width: 50px; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .bodySearch{
+        min-height: 500px;
+    }
+    .bodySearch table{
+        min-width: 1000px;
+        max-width: 1000px;
+        margin-left: 225px;
+        margin: 40px 225px;
+        border: 3px solid #168677;
+        background-color: #168677;
+        color: white;
+        border-collapse: collapse;
+    }
+    .bodySearch td{
+        border: 3px solid black;
+    }
+    .bodySearch th{
+        border: 3px solid black;
+    }
+    .searchLogin a{
+        text-decoration: none; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        margin-left: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        top: 1px;
+    }
+    .deleteLink{
+        text-align: center;
+        width: 60px;
+        height: 22px;
+        background-color: #f10909;
+        position: relative;
+        left: 10px;
+        outline: none;
+        border: 1px solid #097163;
+        border-radius: 3px;
+    }
+    .updateLink{
+        text-align: center;
+        width: 60px;
+        height: 22px;
+        background-color: #1feb9d;
+        position: relative;
+        left: 10px;
+        outline: none;
+        border: 1px solid #097163;
+        border-radius: 3px;
+    }
+    .updateLink a{
+        text-decoration: none;
+        color: white;
+    }
+    .updateLink:hover{
+        background-color: #2ad3e9;
+    }
+    .deleteLink a{
+        text-decoration: none;
+        color: white;
+    }
+    .deleteLink:hover{
+        background-color: rgb(229, 255, 0);
+    }
+    .pagingSearch a{
+        text-decoration: none;    
+        position: relative;
+        top: 5px;    
+        color: white;          
+    }
+    .pagingSearch div{
+        background-color: #19f3e4;    
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        clip-path: circle(50%);
+        text-align: center;
+    }
+    .pagingSearch div:hover{
+        background-color: #41f395;
+    }
+    .pagingSearch{
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        width: 400px;
+        height: 20px;        
+        margin-bottom: 80px;
+        margin-left: 700px;
+    }
+    /* subjectQuiz */
+    .subjectQuiz{
+        width: 600px;
+        margin: 10px 150px;
+        color: white;
+    }
+    .subject{
+        padding-top: 10px;
+        min-height: 300px;
+        min-width: 900px;
+        max-width: 900px;
+        margin: 100px 275px;
+        background-color: #4ba89c;
+    }
+    .subject button{
+        margin-left: 150px;
+        border-radius: 6px;
+        border: 1px solid #4ba89c;
+        outline: none;
+        cursor: pointer;
+    }
+    /* Take Quiz */
+    .bodyQuiz{
+        margin: 100px 225px;
+    }
+    .bodyQuiz table{
+        max-width: 1000px;
+        min-width: 1000px;
+    }
+    .stt{
+        vertical-align: top;
+        width: 100px;
+        height: 120px;
+        border-radius: 6px;
+        color: #168677;
+    }
+    .stt div{
+        width: 85px;
+        height: 75px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background-color: #F2F3F5;
+    }
+    .question{
+        background-color: #e3eefd;
+        border-radius: 6px;
+        border: 1px solid #aecef9;
+    }
+    .bodyQuiz button{
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        position: relative;
+        left: 936px;
+        top: 5px;
+        width: 60px;
+        height: 20px;
+    }
+
+    /* Login */
+    html input{
+        outline: none;
+    }
+    .headerLogin{
+        width: 100%;
+        height: 100px;
+        background-color: #4ba89c;
+    }
+    .bodyLogin{
+        margin: 100px 350px;
+        height: 310px;
+        width: 750px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .body__loginForm input{
+        width: 260px;
+        height: 60px;
+        margin: 0px 5px 30px 5px;
+        font-size: 20px;
+    }
+    .bodyLogin a{    
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 6px;
+    }
+    .bodyLogin a:hover{
+        text-decoration: underline;
+    }
+    #login{
+        width: 150px;
+        height: 61px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #168677;
+    }
+    #login:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .body__title{
+        color: white;
+        font-size: 26px;
+        padding: 10px 0px 40px 5px;
+    }
+    .footerLogin{
+        width: 100%;
+        height: 150px;
+        background-color: #4ba89c;
+    }
+    .welcome{
+        padding-top: 20px;
+        font-size: 45px;
+        margin-left: 800px;
+        color: white;
+        display: flex;
+    }
+    .welcome button{
+        margin-left: 10px;
+        background-color:  #4ba89c;
+        border: 1px solid #4ba89c;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+    .welcome ul{
+        display: flex;
+        list-style: none;
+        position: relative;
+        top: -20px;
+    }
+    .welcome__first{
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+    .login{
+        margin-left: 260px;
+    }
+    /* Create */
+    .bodyCreate{
+        color: white;
+        margin: 100px 550px;
+        height: 230px;
+        width: 350px;
+        background-color: #168677;
+        border: 5px solid white;
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        padding-left: 5px;
+    }
+    .bodyCreate input{
+        margin-left: 30px;
+        width: 268px;
+    }
+    .createPassword input{
+        margin-left: 7px;
+    }
+    .bodyCreate div{
+        margin: 10px 0px;
+    }
+    .createButton input{
+        width: 150px;
+        margin-left: 194px;
+        border-radius: 6px;    
+    }
+    .createButton input:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .backCreate a{
+        color:  #168677;
+        margin-left: 550px;
+        display: flex;
+        position: relative;
+        top: -90px;
+        text-decoration: none;
+    }
+    .backCreate a:hover{
+        text-decoration: underline;
+    }
+    .backSearch a{
+        color:  #168677;
+        margin-left: 220px;
+        display: flex;
+        position: relative;
+        top: -2px;
+        text-decoration: none;
+    }
+    /* Search */
+    .searchLogin{
+        width: 100%;
+        height: 50px;
+        background-color: #168677;
+    }
+    .searchLogin input{
+        margin: 5px 0px 5px 654px ;
+        height: 30px;
+        width: 160px;       
+        background-color: #097163;
+        padding-left: 10px;
+        padding-top: 7px;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+    }
+    .statusBox{
+        height: 40px;
+        min-width: 50px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .subjectBox{
+        height: 40px;
+        min-width: 200px;
+        background-color: #097163;
+        color: white;
+        outline: none;
+        border: 1px solid #097163;
+        padding-top: 0px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .searchLogin input::placeholder{
+        color: white;
+        font-size: 20px;
+    }
+    .searchLogin button{
+        padding-bottom: 3px;
+        margin-left: -8px;
+        height: 40px;
+        width: 50px; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+    }
+    .bodySearch{
+        min-height: 500px;
+    }
+    .bodySearch table{
+        min-width: 1000px;
+        max-width: 1000px;
+        margin-left: 225px;
+        margin: 40px 225px;
+        border: 3px solid #168677;
+        background-color: #168677;
+        color: white;
+        border-collapse: collapse;
+    }
+    .bodySearch td{
+        border: 3px solid black;
+    }
+    .bodySearch th{
+        border: 3px solid black;
+    }
+    .searchLogin a{
+        text-decoration: none; 
+        background-color: #097163 ;  
+        border: 1px solid #097163;
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+        margin-left: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        position: relative;
+        top: 1px;
+    }
+    .deleteLink{
+        text-align: center;
+        width: 60px;
+        height: 22px;
+        background-color: #f10909;
+        position: relative;
+        left: 10px;
+        outline: none;
+        border: 1px solid #097163;
+        border-radius: 3px;
+    }
+    .deleteLink a{
+        text-decoration: none;
+        color: white;
+    }
+    /* subjectQuiz */
+    .subjectQuiz{
+        width: 600px;
+        margin: 10px 150px;
+        color: white;
+    }
+    .subject{
+        padding-top: 10px;
+        min-height: 300px;
+        min-width: 900px;
+        max-width: 900px;
+        margin: 100px 275px;
+        background-color: #4ba89c;
+    }
+    .subject button{
+        margin-left: 150px;
+        border-radius: 6px;
+        border: 1px solid #4ba89c;
+        outline: none;
+        cursor: pointer;
+    }
+    .subject button:hover{
+        background-color: #cdcdcd;
+    }
+    /* Take Quiz */
+    .bodyQuiz{
+        margin: 100px 50px;
+    }
+    .bodyQuiz table{
+        max-width: 1100px;
+        min-width: 1100px;
+    }
+    .stt{
+        vertical-align: top;
+        width: 100px;
+        height: 120px;
+        border-radius: 6px;
+        color: #168677;
+    }
+    .stt div{
+        width: 85px;
+        height: 75px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 6px;
+        background-color: #F2F3F5;
+    }
+    .question{
+        background-color: #e3eefd;
+        border-radius: 6px;
+        border: 1px solid #aecef9;
+    }
+    .bodyQuiz button{
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        position: relative;
+        left: 1036px;
+        top: 5px;
+        width: 60px;
+        height: 20px;
+    }
+    /* Result */
+    .bodyResult{
+        margin: 100px 125px;
+        
+    }
+    .bodyResult h1{
+        margin-top: 0px;
+        color: #168677;
+        position:relative;
+        top: -50px;
+    }
+    .bodyResult table{
+        width: 1200px;
+    }
+    .backToCourse{
+        margin: 50px 600px 100px;
+        border: 1px solid black;
+        width: 190px;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #cdcdcd;
+        cursor: pointer;
+    }
+    .backToCourse:hover{
+        background-color: #a5a5a5;
+    }
+    .backToCourse a{
+        text-decoration: none;
+        color: #605e5e;
+    }
+    .bodyResult table thead{
+        color: white;
+        background-color: #4ba89c;
+        border: 1px solid #4ba89c;
+    }
+    .dateResult{
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+    }
+    .numberOfCorrect{
+        text-align: center;  
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+    }
+    .markOfResult{
+        text-align: center;
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+    }
+    /* history */
+    .history {
+        margin-left: 10px;
+        padding-right: 10px;
+        border-right: 1px solid black;
+    }
+    .history a{
+        color: white;
+    }
+    .history a:hover{
+        color: #efd4d4;
+    }
+    .historyDetail{
+        text-align: center;
+        background-color: #f7f7f7;
+        border: 1px solid #f7f7f7;
+    }
+    .bodyResult table button{
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid #f7f7f7;
+        cursor: pointer;
+        background-color: rgb(224, 145, 161);
+    } 
+    .bodyResult table button:hover{
+        background-color: rgb(228, 88, 88);
+    }
+    .pagingHistory{
+       position: relative;
+        cursor: pointer;
+        display: flex;
+        width: 400px;
+        height: 20px;        
+        margin-bottom: 80px;
+        margin-left: 620px;  
+        margin-top: -20px;
+    }
+    .pagingHistory a{
+       text-decoration: none;    
+        position: relative;
+        top: 5px;    
+        color: white;
+    }
+    .pagingHistory div{
+        background-color: #19f3e4;    
+        width: 30px;
+        height: 30px;
+        margin: 10px;
+        clip-path: circle(50%);
+        text-align: center;
+    }
+    .pagingHistory div:hover{
+        background-color: #41f395;
+    }
+    .searchHistory{
+        margin-left: 900px;
+        padding-top: 6px;
+    }
+    .searchHistory button:hover{
+        background-color: #00edff;
+    }
+    /* Time left */
+    .container{
+        border: 1px solid #168677;
+        width: 200px;
+        height: 180px;    
+        padding: 10px;
+        margin: 100px 0px 100px 10px; 
+    }
+    .container span{
+        vertical-align: bottom;
+        font-weight: 900;
+    }
+    .container__first{
+        position: relative;
+        top: 165px;
+        left: 7px;
+    }
+    .bodyExam{
+        display: flex;
+    }
+    .numOfAnswer{
+        margin: 50px;
+        height: 350px;
+    }
+    .numOfAnswer div{
+        width: 240px;
+        height: 55px;
+        margin: 120px 450px;
+        padding: 50px 150px;
+        background-color: #4ba89c;
+        color: white;
+    }
+    .numOfAnswer button{
+        border-radius: 4px;
+        border: 1px solid #4ba89c;
+        width: 50px;
+    }
+    .numOfAnswer button:hover{
+        background-color: #25e227;
+        cursor: pointer;
+    }
