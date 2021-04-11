@@ -64,6 +64,14 @@
         <servlet-name>SearchHistoryServlet</servlet-name>
         <servlet-class>dang.servlet.SearchHistoryServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginWithGoogleServlet</servlet-name>
+        <servlet-class>dang.servlet.LoginWithGoogleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginGoogleServlet</servlet-name>
+        <servlet-class>dang.servlet.LoginGoogleServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -115,6 +123,14 @@
     <servlet-mapping>
         <servlet-name>SearchHistoryServlet</servlet-name>
         <url-pattern>/SearchHistoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginWithGoogleServlet</servlet-name>
+        <url-pattern>/LoginWithGoogleServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginGoogleServlet</servlet-name>
+        <url-pattern>/LoginGoogleServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

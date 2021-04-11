@@ -41,7 +41,8 @@
                     <a href="https://www.facebook.com/dialog/oauth?client_id=133206675390895&redirect_uri=http://localhost:8084/QuizOnline/login">Login With Facebook</a>
                 </div>
                 <div>
-                    <a href="">Login With Google</a>
+                    <a href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8084/QuizOnline/LoginGoogleServlet&response_type=code
+    &client_id=166893396430-l76pm1f6cudof18ri04fp2os0tsvk0ch.apps.googleusercontent.com&approval_prompt=force">Login With Google</a>
                 </div>
             </div><hr>
             <div class="login">
@@ -50,9 +51,6 @@
                 </div>
                 <div>           
                     <a href="https://www.facebook.com/dialog/oauth?client_id=133206675390895&redirect_uri=http://localhost:8084/QuizOnline/registrationServlet">Create Account With Facebook</a>
-                </div>
-                <div>           
-                    <a href="">Create Account With Google</a>                
                 </div>
             </div>
         </div>

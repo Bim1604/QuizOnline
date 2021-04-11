@@ -5,13 +5,11 @@
  */
 package dang.servlet;
 
-import com.restfb.types.User;
-import dang.loginfb.RestFB;
+import dang.logingoogle.GooglePojo;
+import dang.logingoogle.GoogleUtils;
 import dang.quizdao.TblUserDAO;
-import dang.sha256.PasswordEncrypt;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Map;
 import javax.naming.NamingException;
@@ -28,10 +26,10 @@ import org.apache.log4j.BasicConfigurator;
  *
  * @author Admin
  */
-public class LoginServlet extends HttpServlet {
+public class LoginWithGoogleServlet extends HttpServlet {
 
     private final String subPage = "Sub";
-    private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginServlet.class.getName());
+    private final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(LoginWithGoogleServlet.class.getName());
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -46,54 +44,50 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        String username = request.getParameter("txtUsername");
-        String password = request.getParameter("txtPassword");
-
-        ServletContext context = request.getServletContext();
+         ServletContext context = request.getServletContext();
         Map<String, String> map = (Map<String, String>) context.getAttribute("MAP");
         String url = map.get(subPage);
-        HttpSession session = request.getSession();
-        String code = request.getParameter("code");
-        System.out.println("2 " + code);
+        System.out.println("3");
         try {
-            BasicConfigurator.configure();
             log.error("Exception");
-            TblUserDAO userDAO = new TblUserDAO();
+            BasicConfigurator.configure();
+            /* TODO output your page here. You may use following sample code. */
+            String code = request.getParameter("code");
             if (code == null || code.isEmpty()) {
-                String passwordEncypted = PasswordEncrypt.encryptPassword(password);
-                String fullName = userDAO.checkLogin(username, passwordEncypted);
-                boolean role = userDAO.getRole(username);
-                if (fullName != null) {
-                    session.setAttribute("EMAIL", username);
-                    session.setAttribute("FULLNAME", fullName);
-                    session.setAttribute("ROLE", role);
+                RequestDispatcher dis = request.getRequestDispatcher("login.jsp");
+                dis.forward(request, response);
+            } else {
+                String accessToken = GoogleUtils.getToken(code);
+                GooglePojo googlePojo = GoogleUtils.getUserInfo(accessToken);
+                HttpSession session = request.getSession();
+                String userID = googlePojo.getEmail();
+                System.out.println("user " + userID);
+                session.setAttribute("IDUSER", userID);
+                TblUserDAO dao = new TblUserDAO();
+                String name = dao.checkLoginWithGoogle(userID);
+                boolean role = dao.getRole(userID);
+                if (name != null) {
+                    if (name.length() > 0) {
+                        if (role == false) {
+                            session.setAttribute("FULLNAME", name);
+                            session.setAttribute("ROLE", role);
+                        } else {
+                            session.setAttribute("FULLNAME", name);
+                            session.setAttribute("ROLE", role);
+                        }
+                    }
                 } else {
-                    url = map.get("");
-                    String msg = "Invalid password or username !!";
+                    url = "login.jsp";
+                    String msg = "Invalid Gmail";
                     request.setAttribute("MSG", msg);
                 }
-            } else {
-//                login with fb
-                String accessToken = RestFB.getToken(code, "http://localhost:8084/QuizOnline/login");
-                User user = RestFB.getUserInfo(accessToken);
-                username = user.getId();
-                String fullname = user.getName();
-                String result = userDAO.checkLogin(username, "");
-                boolean role = userDAO.getRole(username);
-                if (result != null) {
-                    session.setAttribute("FULLNAME", fullname);
-                    session.setAttribute("EMAIL", username);
-                    session.setAttribute("ROLE", role);
-                } else {
-                    url = map.get("");
-                    session.setAttribute("MSG", "Login facebook fail. Please try again.");
-                }
             }
-        } catch (SQLException | NamingException | NoSuchAlgorithmException ex) {
-            log.error(ex);
-        } finally {
-            RequestDispatcher rd = request.getRequestDispatcher(url);
-            rd.forward(request, response);
+            response.sendRedirect(url);
+        } catch (SQLException ex) {
+            log.error("SQLException");
+        } catch (NamingException ex) {
+            log.error("NamingException");
+        } finally {            
             out.close();
         }
     }

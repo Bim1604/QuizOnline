@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import javax.naming.NamingException;
 
 /**
@@ -146,5 +147,36 @@ public class TblUserDAO implements Serializable{
             }
         }
         return false;
+    }
+    public String checkLoginWithGoogle(String userID) throws SQLException, NamingException {
+        Connection con = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;        
+        try {
+            con = DBHelper.makeConnection();
+            if (con != null) {
+                String sql = "Select name " 
+                        + "From tblUser " 
+                        + "Where email = ?";
+                ps = con.prepareStatement(sql);
+                ps.setString(1, userID);
+                rs = ps.executeQuery();
+                if (rs.next()) {                    
+                    String name = rs.getString(1);
+                    return name;
+                }
+            }
+        } finally {
+            if (rs != null) {
+                rs.close();
+            }
+            if (ps != null) {
+                ps.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        }
+        return null;
     }
 }
